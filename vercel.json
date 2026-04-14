@@ -1,0 +1,15 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/works", "destination": "/works.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/riverside", "destination": "/riverside.html" },
+    { "source": "/polytech", "destination": "/polytech.html" },
+    { "source": "/chatbot", "destination": "/chatbot.html" },
+    { "source": "/etl-pipeline", "destination": "/etl-pipeline.html" },
+    { "source": "/demand-forecasting", "destination": "/demand-forecasting.html" }
+  ]
+}
