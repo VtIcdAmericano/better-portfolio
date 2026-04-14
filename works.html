@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Chan-Woo (Chris) Yang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Chan-Woo (Chris) Yang</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="works.html" class="active">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="section-label">Portfolio</p>
+      <h1 class="page-hero-title">Selected <span class="accent">Projects</span></h1>
+    </div>
+  </section>
+
+  <!-- FILTER -->
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+  </div>
+
+  <!-- PROJECTS LIST -->
+  <section class="section works-full">
+    <div class="proj-list">
+
+      <!-- PROJECT 1: RIVERSIDE -->
+      <a href="riverside.html" class="proj-card-link">
+        <article class="proj-card">
+          <div class="proj-thumb">
+            <img src="public/assets/images/riverside/1.png" alt="Riverside Company" class="proj-thumb-img" />
+          </div>
+          <div class="proj-body">
+            <span class="work-tag">Investment Analytics</span>
+            <h3>Riverside Company</h3>
+            <p class="proj-date">Sep 2025 – Dec 2025 &nbsp;·&nbsp; Ithaca, New York, U.S.</p>
+            <p>Built a Python data pipeline and analyzed 200+ investments to evaluate relationships between operating targets and IRR. Conducted trend and momentum analysis, identified early underperformance signals, and created a Tableau dashboard to visualize portfolio performance.</p>
+            <span class="proj-cta">View Project →</span>
+          </div>
+        </article>
+      </a>
+
+      <!-- PROJECT 2: ETL PIPELINE -->
+      <a href="etl-pipeline.html" class="proj-card-link">
+        <article class="proj-card">
+          <div class="proj-thumb proj-thumb--gradient" style="background: linear-gradient(135deg,#FF6B00 0%,#1a1a1a 100%);">
+            <span class="proj-num">02</span>
+          </div>
+          <div class="proj-body">
+            <span class="work-tag">Data Engineering</span>
+            <h3>Retail Inventory Data Warehouse &amp; ETL Pipeline</h3>
+            <p>Designed an end-to-end ETL/ELT pipeline using Python and SQL to transform raw grocery inventory data into a star-schema data warehouse, building staging, dimension, and fact tables to support inventory optimization and supplier analysis for Tableau reporting.</p>
+            <span class="proj-cta">View Project →</span>
+          </div>
+        </article>
+      </a>
+
+      <!-- PROJECT 3: DEMAND FORECASTING -->
+      <a href="demand-forecasting.html" class="proj-card-link">
+        <article class="proj-card">
+          <div class="proj-thumb proj-thumb--gradient" style="background: linear-gradient(135deg,#0a0a0a 0%,#FF6B00 100%);">
+            <span class="proj-num">03</span>
+          </div>
+          <div class="proj-body">
+            <span class="work-tag">Data Analytics</span>
+            <h3>Inventory Demand Forecasting &amp; Reorder Optimization</h3>
+            <p>Extended the analytics-ready warehouse from the ETL project to develop scalable demand forecasting and reorder optimization workflows using Python and SQL. Designed the pipeline to support machine-learning-driven inventory planning and future model development.</p>
+            <span class="proj-cta">View Project →</span>
+          </div>
+        </article>
+      </a>
+
+      <!-- PROJECT 4: POLYTECH -->
+      <a href="polytech.html" class="proj-card-link">
+        <article class="proj-card">
+          <div class="proj-thumb">
+            <img src="public/assets/images/polytech.jpeg" alt="Polytech Design & Innovation Contest" class="proj-thumb-img" />
+          </div>
+          <div class="proj-body">
+            <span class="work-tag">Computer Vision / Prototype</span>
+            <h3>Polytech Design &amp; Innovation Contest</h3>
+            <p>Designed and programmed a Raspberry Pi prototype using camera-based motion analysis to evaluate squat form and provide real-time feedback for fitness tracking. Awarded 2nd place at Purdue's Polytech Design &amp; Innovation Contest.</p>
+            <span class="proj-cta">View Project →</span>
+          </div>
+        </article>
+      </a>
+
+      <!-- PROJECT 5: CHATBOT -->
+      <a href="chatbot.html" class="proj-card-link">
+        <article class="proj-card">
+          <div class="proj-thumb">
+            <img src="public/assets/images/chatbot-location.jpeg" alt="Student Advisor Chatbot" class="proj-thumb-img" />
+          </div>
+          <div class="proj-body">
+            <span class="work-tag">Chatbot Development</span>
+            <h3>Student Advisor Chatbot</h3>
+            <p class="proj-date">Nov 2023 – Jan 2024</p>
+            <p>Developed and configured a Watson Assistant-powered Student Advisor Chatbot. Implemented dynamic dialog skills, chitchat functionalities, and handled student questions about library locations and operating hours.</p>
+            <span class="proj-cta">View Project →</span>
+          </div>
+        </article>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <p class="section-label" style="color:#FF6B00;">Let's connect</p>
+      <h2>Interested in working<br /><span class="accent">together?</span></h2>
+      <a href="contact.html" class="btn btn-primary btn-lg">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="nav-logo footer-logo">Chan-Woo (Chris) Yang</span>
+      <div class="footer-links">
+        <a href="works.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 CHANWOO All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Chan-Woo (Chris) Yang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Chan-Woo (Chris) Yang</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="works.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="section-label">Contact</p>
+      <h1 class="page-hero-title">Let's <span class="accent">Connect.</span></h1>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section contact-section">
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="hello@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="project">Inquiry Type</label>
+            <select id="project" name="project">
+              <option value="" disabled selected>Select inquiry type</option>
+              <option>Job Opportunity</option>
+              <option>General Inquiry</option>
+              <option>Networking</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contact-method">Preferred Contact Method</label>
+            <select id="contact-method" name="contact-method">
+              <option value="" disabled selected>Select method</option>
+              <option>Email</option>
+              <option>Phone</option>
+            </select>
+          </div>
+          <div class="form-group form-group--full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Write your message, opportunity details, or reason for reaching out..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-submit">Send Message <span class="btn-arrow">→</span></button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <div class="success-icon">✓</div>
+          <h3>Message sent!</h3>
+          <p>Thanks for reaching out. I'll get back to you soon.</p>
+        </div>
+      </div>
+
+      <!-- INFO -->
+      <div class="contact-info">
+        <div class="contact-info-block">
+          <p class="section-label">Direct</p>
+          <a href="mailto:cy573@cornell.edu" class="contact-email">cy573@cornell.edu</a>
+          <a href="mailto:didcksdn9999@gmail.com" class="contact-email contact-email--secondary">didcksdn9999@gmail.com</a>
+        </div>
+        <div class="contact-info-block">
+          <p class="section-label">Phone</p>
+          <p class="contact-detail">+1 765-771-0313</p>
+        </div>
+        <div class="contact-info-block">
+          <p class="section-label">Location</p>
+          <p class="contact-detail">Ithaca, New York, USA<br /><span style="color:#888;font-size:0.9rem;">Open to full-time opportunities and relocation</span></p>
+        </div>
+        <div class="contact-info-block">
+          <p class="section-label">Availability</p>
+          <div class="availability">
+            <span class="avail-dot"></span>
+            <span>Open to work</span>
+          </div>
+        </div>
+        <div class="contact-info-block">
+          <p class="section-label">Social</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/chanwoo-chris-yang-338856229" target="_blank" rel="noopener" class="social-link">LinkedIn ↗</a>
+          </div>
+        </div>
+        <div class="contact-quote">
+          <blockquote>
+            "Turning data into insights<br />and <span class="accent">decisions.</span>"
+          </blockquote>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="nav-logo footer-logo">Chan-Woo (Chris) Yang</span>
+      <div class="footer-links">
+        <a href="works.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 CHANWOO All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const success = document.getElementById('formSuccess');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      form.style.display = 'none';
+      success.style.display = 'flex';
+    });
+  </script>
+
+</body>
+</html>
